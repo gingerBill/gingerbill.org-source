@@ -72,7 +72,7 @@ The same localist thought process can be applied to the memory-space/size of whi
 
 # The Compiler's Knowledge of the Program
 
-In languages with automatic memory management, many people assume that the compiler knows a lot about the usage and lifetimes of your program. __This is false__. You know much more about your program than the compiler could ever know. In the case of languages with ownership semantics (e.g. Rust, C++11), the language may aid you in certain cases, but it struggles to know (if it is at all possible) when it should pre-allocate or free in bulk. This is compiler ignorance can lead to a lot of performance issues.
+In languages with automatic memory management, many people assume that the compiler knows a lot about the usage and lifetimes of your program. __This is false__. You know much more about your program than the compiler could ever know. In the case of languages with ownership semantics (e.g. Rust, C++11), the language may aid you in certain cases, but it struggles to know (if it is at all possible) when it should pre-allocate or free in bulk. This is compiler ignorance that can lead to a lot of performance issues.
 
 My personal issue with regards to ownership semantics is that it naturally focuses on the ownership of single objects rather than in systems[^ownership-systems]. Such languages also have the tendency to couple the concept of ownership with the concept of lifetime, which are not necessarily linked.
 
